@@ -18,5 +18,9 @@ public class variableprectice : MonoBehaviour
         int tip_amount = 17
         string mood = "tired"
         
+string character_name = "Spacebob";
+Console.WriteLine("In a galaxy not too far away there was " + character_name);
+
+
             
 }

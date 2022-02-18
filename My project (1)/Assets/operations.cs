@@ -21,6 +21,10 @@ int x <= 100
 int s == 56
 int t != 45
 
+int myNum = 50;
+Console.WriteLine ( 5 /8);
+int ageMom = ( 56 % 8);
+
        
             
 
