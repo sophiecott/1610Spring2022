@@ -14,7 +14,7 @@ public class NewBehaviourScript : MonoBehaviour
      	Console.WriteLine("You are male"); 
     } else
 	{
-		Console.WriteLine("You are not male")
+		Console.WriteLine("You are not male");
 	}
 
 if (x > y)
@@ -25,11 +25,21 @@ if (x > y)
 int spaceMan = 24
 if spaceMan < 24
 {
-	Console.WriteLine("You are old enough for space")
+	Console.WriteLine("You are old enough for space");
 }
 else
 {
-	Console.WriteLine("You are too young for space")
+	Console.WriteLine("You are too young for space");
+}
+
+int time = 16
+if (time < 15)
+{
+	Console.WriteLine("Good Morning!");
+}
+else
+{
+	Console.WriteLine("The world is ending!!");
 }
 
 }
