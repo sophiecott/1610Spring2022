@@ -34,14 +34,14 @@ public class switches : MonoBehaviour
         }
     }
 
-    private string name = "Caleb";
+    private string name = "Caitrin";
     switch(name)
     {
         case "Caleb":
         Console.WriteLine("You are so legit");
             break;
         case "Corwin":
-            Console.WriteLine("Please marry me!")
+        Console.WriteLine("Please marry me!");
             yield break;
         case "Caitrin":
         Console.WriteLine("Get the heck away you dirty freak bag");
