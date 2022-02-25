@@ -7,12 +7,29 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+        bool isMale = true;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	if (isMale)
+	{
+     	Console.WriteLine("You are male"); 
+    } else
+	{
+		Console.WriteLine("You are not male")
+	}
+
+if (x > y)
+{
+	Colsole.WriteLine("x is greater than y");
+}
+
+int spaceMan = 24
+if spaceMan < 24
+{
+	Console.WriteLine("You are old enough for space")
+}
+else
+{
+	Console.WriteLine("You are too young for space")
+}
+
 }
