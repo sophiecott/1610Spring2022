@@ -17,6 +17,11 @@ public class ForLoopsWithArrays : MonoBehaviour
 
         string[] friends = {"alyssa", "sophie", "adri", "madi"};
         Console.WriteLine(friends.Length);
+
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine(i);
+        }
     }
 
     // Update is called once per frame

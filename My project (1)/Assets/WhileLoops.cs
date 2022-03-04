@@ -36,6 +36,11 @@ while (i < 2)
         Console.WriteLine("j = {0}", j);
         j++;
     }
+int index = 1;
+while (index <= 5)
+{
+	Console.WriteLine(index);
+	index++;
 }
     }
 
