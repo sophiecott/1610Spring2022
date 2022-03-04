@@ -22,6 +22,12 @@ public class ForLoopsWithArrays : MonoBehaviour
         {
             Console.WriteLine(i);
         }
+
+        int[] luckyNumbers = {6, 12, 14, 21, 24, 2};
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine(i);
+        }
     }
 
     // Update is called once per frame
