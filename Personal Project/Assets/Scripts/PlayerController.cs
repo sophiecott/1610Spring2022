@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float horizontalInput;
     public float verticalInput;
-    public float speed = 5.0f;
+    public float speed = 50.0f;
     public float xRange = 20.0f;
     private Rigidbody playerRb;
 
@@ -29,9 +29,25 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
         horizontalInput = Input.GetAxis("Horizontal");
-        transform.Translate(-Vector3.right * horizontalInput * Time.deltaTime * speed);
+        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
 
         verticalInput = Input.GetAxis("Vertical");
-        transform.Translate(-Vector3.forward * verticalInput * Time.deltaTime * speed);
+        transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Player has collided with enemy.");
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Powerup"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
